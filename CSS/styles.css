@@ -1,0 +1,80 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #482375;
+}
+
+header {
+  background-color: #35155D;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+footer {
+  background-color: #35155D;
+  padding: 15px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+li {
+  color: white;
+  margin: 23px;
+}
+a{
+    text-decoration: none;
+    text-decoration-style: transparent;
+    text-decoration-color: none;
+    text-shadow: 1px solid black;
+    text-overflow: hidden;
+}
+
+.contenedorHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor-principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+  grid-template-rows: 1fr; /* Una fila */
+  gap: 10px; /* Espacio entre elementos */
+}
+
+.tituloIndex {
+  grid-column: 1/2; /* Ocupa la primera columna */
+  grid-row: 1/2; /* Ocupa la primera fila */
+  background-color: #005B41;
+  border: 2px solid black;
+}
+
+.historiaMilei {
+  grid-column: 1/2; /* Ocupa la primera columna */
+  grid-row: 2/3; /* Ocupa la segunda fila */
+  background-color: #232D3F;
+  color: lightgray;
+  border: 2px solid black;
+}
+
+.carruselFotosMilei {
+  grid-column: 2/3; /* Ocupa la segunda columna */
+  grid-row: 1/3; /* Ocupa dos filas */
+  background-color: #232D3F;
+  border: 2px solid black;
+}
+
+/*# sourceMappingURL=styles.css.map */
